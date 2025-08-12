@@ -1,0 +1,127 @@
+@import "./styles/fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --custom-pink:rgba(237, 166, 232, 0.937);
+  --font-mozilla-body: 'Inter', sans-serif;
+} 
+/* optional global styles */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.container{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1560px;
+  @media (min-width: 768px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+ 
+}
+a:hover{
+  color: var(--custom-pink);
+}
+
+.text-gradient {
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
+            #def9fa 0.89%,
+            #e0c8f8 17.23%,
+            #c29df0 42.04%,
+            #cf9ef9 55.12%,
+            #be80d8 71.54%,
+            #c978d2d9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  @apply pl-6 pr-8 py-4 leading-3 rounded-[36px];
+
+  &.btn-black {
+    color: white;
+    position: relative;
+    z-index: 2;
+    border: groove 1px white;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 90px;
+      top: 20px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      transition: all 0.5s ease;
+      border-top: 0px solid transparent;
+      border-bottom: 0px solid transparent;
+      border-left: 10px solid white;
+    }
+
+    &::before {
+      content: "";
+      background: linear-gradient(
+        45deg,
+        rgb(155, 32, 155),
+        rgb(223, 107, 223),
+        rgb(122, 187, 225),
+        rgb(109, 189, 236),
+        rgb(239, 100, 239),
+        rgb(155, 32, 155)
+      );
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      z-index: -1;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      background-size: 600%;
+      filter: blur(10px);
+      border-radius: 36px;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    &:hover::before {
+      animation: glowing 20s linear infinite;
+      opacity: 1;
+    }
+
+    &:hover::after {
+      left: 111px;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-left: 10px solid white;
+      opacity: 1;
+      top: 17px;
+    }
+  }
+}
+
+/* Move keyframes OUTSIDE */
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
