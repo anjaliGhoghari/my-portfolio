@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
    <>
-   <header className='py-8'>
+   <header className='pt-8 absolute w-full'>
    <div className='container'>
    <div className='border text-custom_gray border-gray-500 shadow rounded-2xl p-5 flex justify-between items-center'>
     <p className='text-2xl font-mozilla font-extralight '>ANJALI GHOGHARI</p>

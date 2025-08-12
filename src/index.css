@@ -5,7 +5,6 @@
 
 :root {
   --custom-pink:rgba(237, 166, 232, 0.937);
-  --font-mozilla-body: 'Inter', sans-serif;
 } 
 /* optional global styles */
 html, body, #root {
@@ -24,8 +23,8 @@ html, body, #root {
   padding-right: 1rem;
   max-width: 1560px;
   @media (min-width: 768px) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
  
 }
@@ -81,7 +80,7 @@ a:hover{
         rgb(122, 187, 225),
         rgb(109, 189, 236),
         rgb(239, 100, 239),
-        rgb(155, 32, 155)
+        rgb(208, 114, 208)
       );
       position: absolute;
       top: -2px;
