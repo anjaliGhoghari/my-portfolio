@@ -26,7 +26,7 @@ function Hero() {
           />
           <div className="absolute top-[13rem] gap-[124px] flex justify-between items-center w-[90%]">
             <div>
-              <div className="text-gradient font-mozilla text-8xl leading-[6.5rem] text-left">
+              <div className="text-gradient  font-mozilla text-8xl leading-[6.5rem] text-left">
                 FRONTEND <br /> DEVELOPER
               </div>
               <p className="max-w-[650px] font-mono text-custom_gray text-left mt-3 text-xl">
