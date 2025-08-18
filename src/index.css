@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 :root {
-  --custom-pink:rgba(237, 166, 232, 0.937);
+  --custom-pink:#FF41FF;
 } 
 /* optional global styles */
 html, body, #root {
@@ -24,15 +24,17 @@ html, body, #root {
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
-  max-width: 1560px;
+  max-width: 1444px;
   @media (min-width: 768px) {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
  
 }
 a:hover{
   color: var(--custom-pink);
+  cursor: pointer;
+  
 }
 
 .text-gradient {

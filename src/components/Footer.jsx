@@ -1,31 +1,64 @@
 import React from "react";
-import styles from "../styles/style";
+import AG from "../assets/icons/AG.svg";
 
 function Footer() {
   return (
-    <footer id="contact" className="pt-[128px]">
-      <div className="container">
-        <h2 className={`${styles.heading2} text-gradient-heading font-mozilla`}>
-          CONTACT
-        </h2>
-        <div className="flex justify-between gap-11 items-start border mt-14 text-custom_gray border-gray-600 shadow rounded-2xl p-5">
-          <div className=" flex flex-col items-start justify-center ">
-            <div className="flex justify-between items-center border border-gray-600 rounded-full py-1 px-3 gap-2">
-              <div className="size-[8px] bg-green-300 rounded-full motion-preset-pulse motion-duration-1000"></div>
-              Available for work
-            </div>
-            <div className="font-mozilla text-6xl leading-[4.5rem] mt-3 text-left">
-              LET'S CREATE YOUR <br /> NEXT
-              <span className="text-gradient "> BIG IDEA...</span>
-            </div>
+    <footer id="contact " className="pt-[128px]">
+      <div className="container pb-[255px]">
+        <img
+          className="w-[366px] transform origin-left rotate-[4deg] ml-[-20px]"
+          src={AG}
+        />
+        <p className="font-mozilla tracking-[1px] text-white text-4xl font-medium mb-1">
+          Your professional creative
+          <br />
+          developer is just around your corner!
+        </p>
+        <p className="font-[274] text-lg font-mozilla tracking-[1px] text-white">
+          Let’s give life to your next big project
+        </p>
+        <div className="flex justify-between items-center ">
+<a               href="https://mail.google.com/mail/?view=cm&fs=1&to=anjalighoghari79@example.com&su=New Project Opportunity&body=Hi Anjali,"
+ target="_blank" rel="noopener noreferrer">
+            <button
+              className="text-white group hover:text-[#FF41FF]
+       hover:border-[#FF41FF] mt-6 flex items-center justify-center border border-white leading-[13px] rounded-[32px] py-3 px-3 font-[380]"
+            >
+              
+              📩 &nbsp; Let’s Build Something 
+            </button>
+          </a>
+          <div className="flex items-center gap-4 text-white/50 font-normal">
+            <a href="https://x.com/Anjali_Ghoghari">X.com</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a href="https://github.com/anjaliGhoghari">Github</a>
+             
           </div>
-          <div className="flex">kdbked</div>
           
         </div>
-        <p class="mb-16 text-center text-custom_gray my-5 text-sm sm:mb-0 sm:text-left">
-            © 2025 Anjali Ghoghari. All rights reserved.
-          </p>
+       
+
       </div>
+       <div className="overflow-hidden whitespace-nowrap">
+  <div className="flex animate-marquee gap-[48px]">
+    <h1 className="text-[162px] font-medium leading-[126px] tracking-[-1px] 
+      bg-gradient-to-t from-black via-[#321432] via-[#6B2B6B] via-[#B245B2] to-[#FF41FF]
+      bg-clip-text text-transparent">
+      Creative Developer
+    </h1>
+    <h1 className="text-[162px] font-medium leading-[126px] tracking-[-1px] 
+      bg-gradient-to-t from-black via-[#321432] via-[#6B2B6B] via-[#B245B2] to-[#FF41FF]
+      bg-clip-text text-transparent">
+      Creative Developer
+    </h1>
+  </div>
+</div>
+
     </footer>
   );
 }

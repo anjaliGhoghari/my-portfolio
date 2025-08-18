@@ -1,22 +1,18 @@
 
 import './App.css'
 import Footer from './components/Footer'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Links from './components/Links'
-import Skills from './components/Skills'
+
+import HeroSection from './components/HeroSection'
+import ProjectShowcase from './components/ProjectShowcase'
+
 
 function App() {
 
   return (
     <>
-   <Header/>
-   <Hero/>
-   <Skills/>
-   <Links/>
-   <Footer/>    
-
-  
+   <HeroSection/>
+   <ProjectShowcase/>
+  <Footer/>
     </>
   )
 }

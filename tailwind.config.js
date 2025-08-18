@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
   	extend: {
+		 keyframes: {
+		 marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 15s linear infinite",
+      }, 
   		colors: {
   			custom_pink: 'rgba(237, 166, 232, 0.937)',
   			custom_gray: '#ffffffbe',
@@ -55,7 +64,11 @@ module.exports = {
   			mozilla: [
   				'MozillaHeadline',
   				'sans-serif'
-  			]
+  			],
+			
+        saans: ['"Saans TRIAL"', 'sans-serif'],
+        geist: ['Geist', 'sans-serif'],
+    
   		},
   		screens: {
   			xs: '480px',
@@ -65,11 +78,7 @@ module.exports = {
   			lg: '1200px',
   			xl: '1700px'
   		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		
   	}
   },
   plugins: [
