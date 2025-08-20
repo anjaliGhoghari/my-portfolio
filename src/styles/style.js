@@ -1,13 +1,13 @@
 const styles = {
     
     paddindY:
-      "sm:py-[128px] py-[56px] md:py-[88px]",
+      "sm:py-[128px] py-[56px]",
       paddindX:
       "md:px-[88px] sm:px-[64px] px-[24px]",
       paragraph:
-      "font-mono text-custom_gray text-left mt-3 text-xl sm:leading-[120%] leading-[120%]",
+      "text-white font-mozilla font-[274] sm:text-[16px] text-[14px] max-w-[950px] leading-[22px] tracking-[1px]",
     heading2:
-      "text-gradient-heading font-mozilla font-[570] tracking-[-0.64px] text-[52px] sm:leading-[35px] leading-[32px]",
+      "font-mozilla font-[510] sm:tracking-[-1.08px] tracking-[-0.08px] leading-[38px] sm:leading-none sm:text-[36px] text-[28px] text-white",
     
 };
     export default styles;

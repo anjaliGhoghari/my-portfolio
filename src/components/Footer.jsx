@@ -1,15 +1,18 @@
 import React from "react";
 import AG from "../assets/icons/AG.svg";
+import footerback from "../assets/icons/footer-back.svg";
 
 function Footer() {
   return (
-    <footer id="contact " className="pt-[128px]">
-      <div className="container pb-[255px]">
+    <footer id="contact" className=" w-full bg-contain bg-no-repeat bg-center "
+          style={{ backgroundImage: `url(${footerback})` }}
+        >
+      <div className="container sm:py-[128px] py-[56px] sm:pb-[255px] pb-[166px]">
         <img
-          className="w-[366px] transform origin-left rotate-[4deg] ml-[-20px]"
+          className="sm:w-[366px] w-[195px] transform origin-left rotate-[4deg] sm:ml-[-20px] ml-[-10px]"
           src={AG}
         />
-        <p className="font-mozilla tracking-[1px] text-white text-4xl font-medium mb-1">
+        <p className="font-mozilla tracking-[1px] text-white sm:text-4xl text-3xl font-medium mb-1">
           Your professional creative
           <br />
           developer is just around your corner!
@@ -27,8 +30,19 @@ function Footer() {
               
               📩 &nbsp; Let’s Build Something 
             </button>
+             <div className=" md:hidden mt-6 flex items-center gap-8 text-white/50 font-normal">
+            <a href="https://x.com/Anjali_Ghoghari">X.com</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a href="https://github.com/anjaliGhoghari">Github</a>
+             
+          </div>
           </a>
-          <div className="flex items-center gap-4 text-white/50 font-normal">
+          <div className=" hidden md:flex items-center gap-4 text-white/50 font-normal">
             <a href="https://x.com/Anjali_Ghoghari">X.com</a>
             <a
               target="_blank"
