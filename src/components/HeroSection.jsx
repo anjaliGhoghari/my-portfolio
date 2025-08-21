@@ -14,8 +14,7 @@ function HeroSection() {
       <Header />
       <div className="flex relative items-center text-center justify-center">
         <h1
-          className="sm:text-[252.594px]
-          text-[92.594px] sm:leading-[196px] leading-[87px] sm:tracking-[-16px]
+          className="md:text-[252.594px] sm:text-[156px] text-[72.594px] md:leading-[196px] sm:leading-[172px] leading-[87px] md:tracking-[-16px] sm:tracking-[-8px]
           tracking-[-6px] sm:mt-[528px] mt-[136px] font-geist"
           style={{
             background:
@@ -28,7 +27,7 @@ function HeroSection() {
           Developer
         </h1>
         <img
-          className="absolute sm:bottom-[45px] bottom-[37px] w-[230px] sm:w-auto"
+          className="absolute md:bottom-[45px] sm:bottom-[42px] bottom-[37px] w-[230px] md:w-auto sm:w-[587px]"
           src={AG}
         />
       </div>
@@ -42,7 +41,7 @@ function HeroSection() {
         <a href={resume} target="_blank" rel="noopener noreferrer">
           <button
             className="text-white group hover:text-[#FF41FF]
-   hover:border-[#FF41FF] mt-6 flex items-center justify-center border border-white leading-[13px] rounded-[32px] py-[6px] px-3 font-[380]"
+   hover:border-[#FF41FF] mt-6  flex items-center justify-center border border-white leading-[13px] rounded-[32px] py-[6px] px-3 font-[380]"
           >
             <svg
               className="mr-1 group-hover:fill-[#FF41FF]"

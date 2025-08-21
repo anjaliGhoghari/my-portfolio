@@ -102,16 +102,16 @@ function Skills() {
       className={` w-full bg-cover bg-center bg-no-repeat }`}
       style={{ backgroundImage: `url(${skillback})` }}
     >
-      <div className="sm:py-[192px] py-[56px] container">
+      <div className={`${styles.paddindY} container`}>
         <div className="flex justify-center items-start flex-col  ">
           <h2 className={styles.heading2}>Skills</h2>
-          <p className={`${styles.paragraph} pt-1 pb-8`}>
+          <p className={`${styles.paragraph} pt-3 pb-8 `}>
             Tools and technologies I use to build web applications.
           </p>
           <div className="flex justify-between items-center">
-            <div className="flex flex-wrap max-w-[600px] justify-start items-center gap-2">
+            <div className="flex flex-wrap max-w-[800px] justify-start items-center gap-2">
               {skills.map((skill) => (
-                <div className="flex  items-center justify-between border-[0.5px] border-white/30 bg-white/5 rounded-full px-3 py-[6px] ">
+                <div className="flex  items-center justify-between  bg-white/10 rounded-full px-3 py-[6px] ">
                   <img
                     src={skill.icon}
                     alt={skill.name}
@@ -121,7 +121,7 @@ function Skills() {
                 </div>
               ))}
             </div>
-            <div className="relative ml-20 mt-[-95px] hidden sm:block">
+            <div className="relative ml-20 mt-[-95px] hidden  ">
               <img
                 className="max-w-[70px] absolute top-[-261px] left-[78px] animate-float will-change-transform drop-shadow [animation-delay:0s]"
                 src={logosass}

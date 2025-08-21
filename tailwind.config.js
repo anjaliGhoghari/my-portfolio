@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
+		
         floatOrganic: {
           "0%":   { transform: "translate(0px, 0px) rotate(0deg)" },
           "25%":  { transform: "translate(4px, -6px) rotate(2deg)" },
@@ -15,10 +16,18 @@ module.exports = {
           "75%":  { transform: "translate(-5px, 6px) rotate(3deg)" },
           "100%": { transform: "translate(0px, 0px) rotate(0deg)" },
         },
+		 marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
         float: "floatOrganic 12s ease-in-out infinite",
+		marquee: 'marquee 20s linear infinite',
       },
+	   
+      
+      
       colors: {
         custom_pink: "rgba(237, 166, 232, 0.937)",
         custom_gray: "#ffffffbe",
@@ -64,7 +73,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        mozilla: ["MozillaHeadline", "sans-serif"],
+        sfPro: ["SF-Pro-Text", "sans-serif"],
         saans: ['"Saans TRIAL"', "sans-serif"],
         geist: ["Geist", "sans-serif"],
       },
