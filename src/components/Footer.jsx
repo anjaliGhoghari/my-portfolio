@@ -9,7 +9,7 @@ function Footer() {
       className=" w-full bg-contain bg-no-repeat bg-center pb-4 "
       style={{ backgroundImage: `url(${footerback})` }}
     >
-      <div className="container sm:py-[128px] py-[56px] sm:pb-[255px] pb-[166px]">
+      <div className="container sm:py-[128px] py-[56px] sm:pb-[255px] pb-[122px]">
         <img
           className="sm:w-[366px] w-[195px] transform origin-left rotate-[4deg] sm:ml-[-20px] ml-[-10px]"
           src={AG}
@@ -53,23 +53,23 @@ function Footer() {
       </div>
      <div className="overflow-hidden whitespace-nowrap w-full">
   <div className="flex animate-marquee">
-    <h1 className="mr-8 flex-shrink-0 text-[clamp(2rem,8vw,20rem)] font-medium leading-[clamp(2.5rem,9vw,8rem)] tracking-[-1px] 
+    <h1 className="mr-8 flex-shrink-0 text-[clamp(4rem,8vw,20rem)] font-medium leading-[clamp(2.5rem,9vw,8rem)] tracking-[-1px] 
       bg-gradient-to-t from-black via-[#321432] via-[#6B2B6B] via-[#B245B2] to-[#FF41FF]
       bg-clip-text text-transparent">
       Creative Developer
     </h1>
-    <h1 className="mr-8 flex-shrink-0 text-[clamp(2rem,8vw,20rem)] font-medium leading-[clamp(2.5rem,9vw,8rem)] tracking-[-1px] 
+    <h1 className="mr-8 flex-shrink-0 text-[clamp(4rem,8vw,20rem)] font-medium leading-[clamp(2.5rem,9vw,8rem)] tracking-[-1px] 
       bg-gradient-to-t from-black via-[#321432] via-[#6B2B6B] via-[#B245B2] to-[#FF41FF]
       bg-clip-text text-transparent">
       Creative Developer
     </h1>
     {/* duplicate for smooth loop */}
-    <h1 className="mr-8 flex-shrink-0 text-[clamp(2rem,8vw,20rem)] font-medium leading-[clamp(2.5rem,9vw,8rem)] tracking-[-1px] 
+    <h1 className="mr-8 flex-shrink-0 text-[clamp(4rem,8vw,20rem)] font-medium leading-[clamp(2.5rem,9vw,8rem)] tracking-[-1px] 
       bg-gradient-to-t from-black via-[#321432] via-[#6B2B6B] via-[#B245B2] to-[#FF41FF]
       bg-clip-text text-transparent">
       Creative Developer
     </h1>
-    <h1 className="mr-8 flex-shrink-0 text-[clamp(2rem,8vw,20rem)] font-medium leading-[clamp(2.5rem,9vw,8rem)] tracking-[-1px] 
+    <h1 className="mr-8 flex-shrink-0 text-[clamp(4rem,8vw,20rem)] font-medium leading-[clamp(2.5rem,9vw,8rem)] tracking-[-1px] 
       bg-gradient-to-t from-black via-[#321432] via-[#6B2B6B] via-[#B245B2] to-[#FF41FF]
       bg-clip-text text-transparent">
       Creative Developer

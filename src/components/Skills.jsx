@@ -111,7 +111,7 @@ function Skills() {
           <div className="flex justify-between items-center">
             <div className="flex flex-wrap max-w-[800px] justify-start items-center gap-2">
               {skills.map((skill) => (
-                <div className="flex  items-center justify-between  bg-white/10 rounded-full px-3 py-[6px] ">
+                <div className="flex  items-center justify-between bg-white/10 rounded-full px-3 py-[6px] ">
                   <img
                     src={skill.icon}
                     alt={skill.name}

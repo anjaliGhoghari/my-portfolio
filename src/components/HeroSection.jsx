@@ -8,14 +8,14 @@ import styles from "@/styles/style";
 function HeroSection() {
   return (
     <section
-      className="w-full  sm:bg-cover bg-contain bg-no-repeat sm:bg-center bg-revert-layer "
-      style={{ backgroundImage: `url(${hero})` }}
+      className="w-full  sm:bg-cover bg-contain bg-no-repeat sm:bg-center bg-revert-layer hero-bg "
+      style={{ backgroundImage: `url(${hero})`}}
     >
       <Header />
       <div className="flex relative items-center text-center justify-center">
         <h1
           className="md:text-[252.594px] sm:text-[156px] text-[72.594px] md:leading-[196px] sm:leading-[172px] leading-[87px] md:tracking-[-16px] sm:tracking-[-8px]
-          tracking-[-6px] sm:mt-[528px] mt-[136px] font-geist"
+          tracking-[-6px] sm:mt-[480px] mt-[350px] font-geist"
           style={{
             background:
               "linear-gradient(0deg, #000 -12.49%, #321432 24.17%, #6B2B6B 51.54%, #B245B2 77.68%, #FF41FF 94.59%)",

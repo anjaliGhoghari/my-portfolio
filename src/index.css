@@ -17,6 +17,17 @@ html, body, #root {
   padding: 0;
   box-sizing: border-box;
 }
+.hero-bg {
+  background-size: 337% 106%;
+  background-position: center;
+}
+
+@media (min-width: 640px) {
+  .hero-bg {
+    background-size: cover;
+    background-position: center;
+  }
+}
 .container{
   position: relative;
   margin-left: auto;
